@@ -38,7 +38,7 @@ func Load() ([]*Book, error) {
 		return nil, err
 	}
 
-	vp := VertpigConnect(conf.Apikey, conf.Secret)
+	vp := VertpigConnect(conf.Apikey, conf.Secret) //edit this based on market
 
 	var ret []*Book
 	for _, m := range conf.Markets {
